@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap');
+
+:root {
+    --cor0: hsl(225, 100%, 94%);
+    --cor1: hsl(245, 75%, 52%);
+    --cor2: hsl(225, 100%, 98%);
+    --cor3: hsl(224, 23%, 55%);
+    --cor4: hsl(223, 47%, 23%);
+    --font0:'Red Hat Display', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font0);
+}
+
+body {
+    background-image: url(images/pattern-background-desktop.svg);
+    background-color: var(--cor2);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background-color: white;
+    max-width: 410px;
+    border-radius: 16px;
+}
+
+main img {
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+}
+
+main section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 32px;
+    width: 100%;
+    height: 100%;
+}
+
+main section h1 {
+    margin-top: 0px;
+    margin-bottom: 16px;
+    color: var(--cor4);
+}
+
+main section span {
+    color: var(--cor3);
+    text-align: center;
+}
+
+main div.information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--cor2);
+    border: 16px;
+    padding: 24px 16px;
+    margin: 32px 0px;
+    border-radius: 16px;
+}
+
+main div.information .music-price {
+    display: flex;
+    align-items: center;
+}
+
+main div.information .music-price img {
+    width: 48px;
+    margin-right: 16px;
+}
+
+main div.information .music-price .price {
+    display: flex;
+    flex-direction: column;
+}
+
+main div.information a {
+    color: var(--cor1);
+    font-weight: 600;
+    font-size: 95%;
+    transition: all 0.3s;
+}
+
+main div.information a:hover {
+    color: var(--cor4);
+    text-decoration: none;
+}
+
+main button {
+    cursor: pointer;
+    background-color: var(--cor1);
+    color: white;
+    font-weight: 600;
+    border: none;
+    width: 100%;
+    padding: 16px 0px;
+    border: 14px;
+    margin-bottom: 24px;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.2);
+    transition: all 0.3s;
+    border-radius: 16px;
+}
+
+main button:hover {
+    background: #766CF1;
+}
+
+#cancel {
+    text-decoration: none;
+    color: var(--cor3);
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 32px;
+    transition: color 0.3s;
+}
+
+#cancel:hover {
+    color: var(--cor4);
+}
